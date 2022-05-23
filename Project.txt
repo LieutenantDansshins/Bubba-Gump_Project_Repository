@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/Project Diagram.png)
+![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the __configuration___ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -241,7 +241,7 @@ The playbook implements the following tasks:
 - Download image installs docker elk container from specific elk image 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-Images/ Elk Docker PS Screenshot.png
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
@@ -268,13 +268,13 @@ Functionbeat ships and monitors cloud data
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the ___configuration__ file to filebeat-playbook.yml_____.
-- Update the ___configuration__ file to include...
-- Run the playbook, and navigate to _Filebeat installation page on the ELK server GUI to check that the installation worked as expected.
+- Copy the _____ file to _____.
+- Update the _____ file to include...
+- Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_ filebeat-playbook.yml playbeat configuration file copied to filebeatfile in aansible container
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_by ssh into the machine I want to install filebeat onn and creating a config file in container.
-- _Which URL do you navigate to in order to check that the ELK server is running? http://52.189.234.82:5601/app/kibana#/home
+- _Which file is the playbook? Where do you copy it?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which URL do you navigate to in order to check that the ELK server is running?
 
-
+_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
